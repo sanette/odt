@@ -1,0 +1,15 @@
+(executable
+ (name test)
+ (libraries odt))
+
+(alias
+ (name buildtest)
+ (deps test.exe esope.odt))	
+
+(alias
+ (name runtest)
+ (deps test.exe esope.odt) 
+ (action	
+  (run %{exe:test.exe})
+  ))	
+  

@@ -1,0 +1,4 @@
+(library
+ (name odt)
+ (public_name odt)
+ (libraries str camlzip))
